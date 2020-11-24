@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>RR</title>
+</head>
+<body>
+    <!-- Take input of the program from the form -->
+    <form action="#" class="container__form">
+        <div class="form__head">
+            <h2 class="form__heading">
+                Round Robin Sheduling Algorithm 
+            </h2>
+            <p class="form__para">Pre emptive Algorithm</p>
+        </div>
+        <div class="form">
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="No of Processes" id="process">
+                <label for="process" class="form__label">No of Processes</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Burst time" id="burst_time">
+                <label for="burst_time" class="form__label">Burst time</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Quantam time" id="quantam_time">
+                <label for="quantam_time" class="form__label">Quantam time</label>
+            </div>
+
+            <div class="form__submit">
+                <input type="submit" value="RUN" class="submit">
+            </div> 
+        </div>
+        
+    </form>
+
+    
+        <!-- table here -->
+    <div class="container__main">
+        <div class="table">
+            <table>
+                    
+            </table>
+            <button class="run"></button>
+        </div>
+        <!-- graphical representation here -->
+        <fresh>
+        </fresh>
+        <p class = "time">
+        Timer: <strong id="timer"></strong> sec
+        </p>
+    </div> 
+    <script src="./app.js"></script>
+</body>
+</html>

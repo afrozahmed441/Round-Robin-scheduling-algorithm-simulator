@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: box-sizing;
+    font-size: 62.5%;
+}
+
+:root {
+    --color-body: #F5F8FF;
+    --color-primary: #4B8DFF;
+    --color-border: #A6BBDE;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #999;
+    --color-light-grey: #eee;
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    position: relative;
+    height: 100vh;
+}
+
+table, th, td {
+   border: 1px solid #000;
+   padding: 1rem 2rem;
+   height: 2rem;
+   border-collapse: collapse;
+   font-size: 1.5rem;
+}
+
+.table > *{
+
+    margin: 5rem 0 5rem 0;
+   
+}
+
+
+
+
+.container__main {
+     
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------- graphics here  */
+
+fresh th {
+    background: linear-gradient(WhiteSmoke, lightgray);
+    text-align: left;
+    border: 1px solid var(--color-black);
+    height: 400 px;
+}
+
+fresh td {
+    border: 1px solid var(--color-black);
+    border-bottom: 0;
+    /*border-right: 0;*/
+    height: 20px;
+    text-align: left;
+}
+
+div th, div td {
+    border: 1px solid var(--color-black);
+    text-align: center;
+}
+
+fresh {
+   margin-top: 10rem;
+   position: relative;
+}
+
+#timer {
+    
+    font-size: 2rem;
+}
+
+.time {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+/* ------------- */
+.container__form { 
+    font-family: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form {
+    margin: 4rem 50rem;
+    margin-bottom: 16rem;
+}
+
+.form__heading {
+    margin-top: 10rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form__para {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form__group:not(:last-of-type) {
+    margin: 0 3rem .8rem 3rem;
+}
+
+.form__input {
+    font-family: inherit;
+    display: block;
+    border: none;
+    background-color: var(--color-light-grey);
+    padding: 1rem 2rem;
+    width: 90%;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 2px solid var(--color-border);
+    box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .12);
+}
+
+.form__label {
+    display: block;
+    font-family: inherit;
+    font-size: 1.3rem;
+    margin: .4rem 0 .3rem 2rem;
+    transition: all .3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4rem);
+}
+
+.form__submit {
+    margin: .5rem 0;
+    display: flex;
+}
+
+.submit {
+    font-size: 1.5rem;
+    margin: .4rem auto;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--color-white);
+    background-image: linear-gradient(105deg, 
+    var(--color-border) 0%, var(--color-border) 50%, 
+    var(--color-primary) 50%
+    );
+    background-size: 220%;
+    padding: 1rem 3.2rem;
+    border-radius: 10rem;
+    transition: all .6s;
+    
+}
+
+.submit:hover {
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .12), 0 0 1rem rgba(0, 0, 0, .12);
+    background-position: 100%;
+    transform: translateY(-.25rem);
+}
+
+.submit:active {
+    box-shadow: 0 .35rem .4rem rgba(0, 0, 0, .12), 0 0 .4rem rgba(0, 0, 0, .12);
+    background-position: 100%;
+    transform: translateY(0rem);
+}
+
+.submit:focus {
+    outline: none;
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .12), 0 0 1rem rgba(0, 0, 0, .12);
+    background-position: 100%;
+}
+
+.run {
+    font-size: 1.5rem;
+    margin: .4rem auto;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--color-white);
+    background-image: linear-gradient(105deg, 
+    var(--color-border) 0%, var(--color-border) 50%, 
+    var(--color-primary) 50%
+    );
+    display: none;
+    background-size: 220%;
+    padding: 1rem 3.2rem;
+    border-radius: 10rem;
+    transition: all .6s;
+}
+
+.run:hover {
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .12), 0 0 1rem rgba(0, 0, 0, .12);
+    background-position: 100%;
+    transform: translateY(-.25rem);
+}
+
+.run:active {
+    box-shadow: 0 .35rem .4rem rgba(0, 0, 0, .12), 0 0 .4rem rgba(0, 0, 0, .12);
+    background-position: 100%;
+    transform: translateY(0rem);
+}
+
+.run:focus {
+    outline: none;
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .12), 0 0 1rem rgba(0, 0, 0, .12);
+    background-position: 100%;
+}
+
